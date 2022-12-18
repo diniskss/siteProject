@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 </head>
 
 <body>
@@ -19,12 +21,13 @@
     </div>
     <div class="conteiner-bar">
         <div id="img1">
-            <img id="img2" src="img/228.png">
+            <a class="text-center" href="index.html"><img id="img2" alt="Backround Image" src="img/228.png"></a>
         </div>
-        <div class="contentbar">
-            <div class="butt"><a href="music.html">Музыка</a></div>
-            <div class="butt"><a class="button">Фотографии</a></div>
-            <div class="butt" href="contact.html"><a class="button">Контакты</a></div>
+        <div class="contentbar btn-group-lg">
+            <div onClick="javascript:window.location.href='music.html';" class="butt"><a class="button text-center">Музыка</a></div>
+            <div onClick="javascript:window.location.href='#';" class="butt"><a class="button text-center">Фотографии</a></div>
+            <div onClick="javascript:window.location.href='tickets.html';" class="butt"><a class="button text-center">Купить билеты</a></div>
+            <div onClick="javascript:window.location.href='#feedback';" class="butt"><a class="button text-center">Контакты</a></div>
         </div>
     </div>
     </div>
@@ -59,9 +62,9 @@
                     allowfullscreen></iframe></div>
         </div>
     </div>
-    <footer>
+    <footer data-bs-spy="scroll" data-bs-target="#navbar-feedback" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         </ul>
-        <h6>Обратная связь</h6>
+        <h6 id="feedback">Обратная связь</h6>
         <li><a href="https://genius.com/Melon-music-melon-music-members-list-annotated">Лейбл</a></li>
         <li><a href="https://mayot-concert.ru/">Концерты</a></li>
         <li><a href="https://i-m-i.ru/skilled/music-managers/murad-halikov">Мененджер</a></li>

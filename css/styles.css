@@ -1,15 +1,22 @@
+:root{
+  --color1: #cd5c5c;
+  --color2: #c9828279;
+  --color3: #a79999;
+  --backgroundcolor: #070707;
+}
+
 * {
   margin: 0;
 
 }
 
 html {
-  background-color: #070707;
+  background-color: var(--backgroundcolor);
 }
 
 body {
   list-style-type: none;
-  color: #a79999;
+  color: var(--color3);
   font-family: "Plex Sans", sans-serif;
   text-decoration: none;
   width: 100%;
@@ -107,7 +114,7 @@ ul {
 }
 
 .contentbar {
-  background-color: #cd5c5c;
+  background-color: var(--color1);
   height: auto;
   display: flex;
   flex-direction: row;
@@ -120,14 +127,33 @@ ul {
   justify-self: center;
   display: flex;
   cursor: pointer;
-  font-size: 3em;
+  font-size: 2em;
   justify-content: center;
+  text-decoration: none;
+  align-items: center;
+}
+
+.button a{
+  align-items: center;
+  text-align: center;
 }
 
 .butt:hover {
-  background-color: #c9828279;
+  background-color: var(--color2);
 }
 
+button{
+  padding: 10px 30px;
+  margin: 0;
+  border: 2px solid #fff;
+  background-color: var(--backgroundcolor);
+  color: white;
+  align-items: center;
+}
+
+button:hover{
+  background-color: black;
+}
 
 footer {
   background-color: black;
@@ -138,7 +164,7 @@ footer {
   font-size: 13px;
   border-top-color: #bbb;
   /* opacity: 0.5;  Затемнение футора*/
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 footer a {
@@ -157,6 +183,9 @@ footer a {
   margin: 25px;
 }
 
+.hr-content{
+  opacity: 1;
+}
 
 .media-content {
   display: grid;
@@ -186,6 +215,7 @@ iframe {
 h6 {
   font-size: 20px;
   margin: 10px;
+  position: relative;
 }
 
 .tagbar {
